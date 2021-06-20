@@ -1,0 +1,44 @@
+name: HideNSeek
+version: ${project.version}
+main: me.pixelizedgaming.hidenseek.HideNSeek
+api-version: 1.16
+description: Hide and seek plugin by pixelizedgaming
+commands:
+  setseeker:
+    description: Sets the seeker.
+    usage: /<command> <player>
+    permission: pixelizedhns.setseeker
+  startgame:
+    description: Starts the game.
+    usage: /<command>
+    permission: pixelizedhns.startgame
+  randomseeker:
+    description: Chooses a random seeker. (this is chosen by default)
+    usage: /<command>
+    permission: pixelizedhns.randomseeker
+  setspawnlocation:
+    description: Sets the spawn location at the player's location.
+    usage: /<command> [seeker/hider]
+    permission: pixelizedhns.setspawnlocation
+  setlobbylocation:
+    description: Sets the lobby location at the player's location.
+    usage: /<command>
+    permission: pixelizedhns.setlobbylocation
+  infectionmode:
+    description: Toggles infection mode.
+    usage: /<command>
+    permission: pixelizedhns.infectionmode
+  endgame:
+    description: Ends an existing game.
+    usage: /<command>
+    permission: pixelizedhns.endgame
+  hnsreload:
+    description: Reloads the config for HideNSeek.
+    usage: /<command>
+    permission: pixelizedhns.endgame
+  stuck:
+    description: Teleports you to spawn.
+    usage: /<command>
+  debuginfo:
+    description: dev stuff
+    usage: /<command>

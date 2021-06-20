@@ -1,0 +1,9 @@
+# ################################################ #
+# Sets the hider and seeker spawns                 #
+# Make sure they are spaced out like this: 1 2 3   #
+# ################################################ #
+
+SeekerSpawn: 0 0 0
+SeekerSpawnWorld: world
+HiderSpawn: 0 0 0
+HiderSpawnWorld: world
