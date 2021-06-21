@@ -1,6 +1,5 @@
 package me.pixelizedgaming.hidenseek;
 
-import me.pixelizedgaming.hidenseek.files.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -21,7 +20,7 @@ public final class HideNSeek extends JavaPlugin {
     public void onEnable() {
 
         System.out.println("I just shit myself (hide and seek plugin enabled)");
-        Objects.requireNonNull(getCommand("setseeker")).setTabCompleter(new TabComplete());
+        Objects.requireNonNull(getCommand("setseeker")).setTabCompleter(new TabComplete()); //this shit still doesnt work
         UtilityClass.setMainClass(this);
         getServer().getPluginManager().registerEvents(new EventListener(), this);
 
@@ -34,6 +33,7 @@ public final class HideNSeek extends JavaPlugin {
 
         GameManager.init(getConfig());
     }
+
 
     public void loadConfig(){
 
